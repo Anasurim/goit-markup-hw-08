@@ -1,0 +1,125 @@
+// HERO button
+.hero__btn {
+  padding: 10px 32px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px transparent;
+  color: $nav-background-color;
+  background-color: $accent-color;
+
+  transition: background-color 250ms $hover-time-func,
+    box-shadow 250ms $hover-time-func;
+
+  &:focus,
+  &:hover {
+    background-color: $accent-color-hover;
+    box-shadow: $box-shadow;
+  }
+}
+
+// footer submit btn
+.signup-form__submit-btn {
+  display: inline-flex;
+  align-items: center;
+  min-width: 200px;
+  gap: 10px;
+  padding-left: 28px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 12px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+  box-shadow: $box-shadow;
+  border-radius: 4px;
+  border: 1px transparent;
+  color: $nav-background-color;
+  background-color: $accent-color;
+
+  transition: background-color 250ms $hover-time-func,
+    box-shadow 250ms $hover-time-func;
+
+  &:focus,
+  &:hover {
+    background-color: $accent-color-hover;
+    box-shadow: $box-shadow;
+  }
+}
+
+// modal btns
+.hero__btn--center {
+  @extend .hero__btn;
+  display: block;
+  margin: 0 auto;
+}
+
+.close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: $nav-background-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: $logo-color;
+
+  transition: color 250ms $hover-time-func;
+
+  &__icon {
+    fill: currentColor;
+  }
+
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+// portfolio btns
+.filter__btn {
+  color: $secondary-text-color;
+  background-color: $secondary-bg-color;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px transparent;
+
+  padding: 6px 22px;
+
+  transition: color 250ms $hover-time-func,
+    background-color 250ms $hover-time-func, box-shadow 250ms $hover-time-func;
+
+  &:focus,
+  &:hover {
+    background-color: $accent-color;
+    color: $nav-background-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

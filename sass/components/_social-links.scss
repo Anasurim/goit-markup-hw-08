@@ -1,0 +1,36 @@
+.social-links {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.social-links__link {
+  display: inline-flex;
+  padding: 12px 12px;
+  color: $soc-links-bgc;
+  border-radius: 50%;
+
+  transition: color 250ms $hover-time-func,
+    background-color 250ms $hover-time-func;
+
+  &:hover,
+  &:focus {
+    color: $nav-background-color;
+    background-color: $accent-color;
+  }
+}
+.social-links__icon {
+  fill: currentColor;
+}
+
+//======== footer social links
+
+.social-links__link--background-color {
+  @extend .social-links__link;
+  background-color: $footer-bgc-soc;
+  border-radius: 50%;
+}
+.social-links__icon--white {
+  fill: $nav-background-color;
+}

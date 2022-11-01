@@ -1,0 +1,36 @@
+.customers {
+  color: $secondary-text-color;
+}
+.customers__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  margin-bottom: 50px;
+}
+.customers__list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.customers__link {
+  display: inline-flex;
+  padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: $customer-link-color;
+
+  transition: color 250ms $hover-time-func, border 250ms $hover-time-func;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border: 1px solid $accent-color;
+  }
+}
+
+.customers__icon {
+  fill: currentColor;
+}

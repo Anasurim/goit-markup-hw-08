@@ -1,0 +1,91 @@
+.footer {
+  background-color: $dark-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.container__footer--flex {
+  display: flex;
+  align-items: baseline;
+}
+.adress {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $nav-background-color;
+
+  margin-top: 0;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.adress__google-link {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  color: $nav-background-color;
+
+  transition: color 250ms $hover-time-func;
+
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
+}
+.follow {
+  max-width: 206px;
+  margin-left: 70px;
+}
+.follow__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $nav-background-color;
+
+  margin-bottom: 20px;
+}
+
+.signup-form {
+  margin-left: 93px;
+  min-width: 570px;
+}
+
+.signup-form__title {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $nav-background-color;
+}
+
+.signup-form__input {
+  min-width: 358px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  background-color: $dark-background-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
