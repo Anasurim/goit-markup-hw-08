@@ -1,10 +1,5 @@
-# goit-markup-hw-07
+# goit-markup-hw-08
 
-# homework-7
+# final homework in HTML/CSS
 
-dont forget:
-in the end bem styles for buttons ---- done
-
-- footer logo-> to remove logo class
-- modal btn to remove additional classes
-- footer soc.links
+rework the whole css to make mobile first
