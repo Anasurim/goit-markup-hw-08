@@ -1,21 +1,19 @@
-.advantages__list {
-  display: flex;
-  gap: 30px;
+@media screen and (max-width: $mobile) {
+  .advantages__item {
+    width: 450px;
+  }
 }
 
-.advantages__item {
-  flex-basis: calc((100% - 90px) / 4);
-}
 .advatages__icon {
-  background-color: $secondary-bg-color;
-  border-radius: 4px;
-
   display: flex;
   justify-content: center;
   align-items: center;
   height: 120px;
-  max-width: 270px;
+  width: 450px;
   margin-bottom: 30px;
+
+  background-color: $secondary-bg-color;
+  border-radius: 4px;
 }
 
 .advantages__title {

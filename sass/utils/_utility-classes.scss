@@ -1,12 +1,30 @@
 .container {
   margin: 0 auto;
-  width: 1200px;
+  max-width: $desktop;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and (max-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablett) {
+    width: $tablett;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
 }
+
 .section--padding {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  @media screen and (max-width: $mobile) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .visually-hidden {
