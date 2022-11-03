@@ -1,4 +1,7 @@
 .hero {
+  width: 480px;
+  padding: 118px 60px;
+
   background-color: $bgc-hero;
   background-image: linear-gradient(
       to right,
@@ -8,11 +11,6 @@
     url("../img/studio-img/hero-img.jpg");
   background-repeat: no-repeat;
   background-position: center;
-
-  @media screen and (max-width: $mobile) {
-    width: 480px;
-    padding: 118px 60px;
-  }
 }
 
 .hero__title {

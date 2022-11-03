@@ -1,16 +1,12 @@
 .footer {
+  width: $mobile;
   background-color: $dark-background-color;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .container__footer--flex {
-  display: flex;
-  align-items: baseline;
-
-  @media screen and (max-width: $mobile) {
-    display: block;
-  }
+  display: block;
 }
 
 .adress {
@@ -46,4 +42,64 @@
   &:hover {
     color: $accent-color;
   }
+}
+
+.follow {
+  max-width: 206px;
+
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 60px;
+}
+
+.follow__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $nav-background-color;
+
+  margin-bottom: 20px;
+}
+
+.signup-form {
+  width: 100%;
+  margin: 0;
+}
+
+.signup-form__title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $nav-background-color;
+}
+
+.signup-form__label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.signup-form__input {
+  width: 450px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+  background-color: $dark-background-color;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
 }

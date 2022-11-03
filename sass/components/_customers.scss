@@ -1,6 +1,8 @@
 .customers {
+  width: $mobile;
   color: $secondary-text-color;
 }
+
 .customers__title {
   font-weight: 700;
   font-size: 36px;
@@ -13,23 +15,14 @@
 
 .customers__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
-
-  @media screen and (max-width: $mobile) {
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (max-width: $mobile) {
-  .customers__link {
-    padding: 15px 52px;
-  }
 }
 
 .customers__link {
   display: inline-flex;
-  padding: 16px 32px;
+  padding: 15px 50px;
   border: 1px solid $customer-link-color;
   border-radius: 4px;
   color: $customer-link-color;
@@ -43,11 +36,6 @@
   }
 }
 
-@media screen and (max-width: $mobile) {
-  .customers__link {
-    padding: 15px 50px;
-  }
-}
 .customers__icon {
   fill: currentColor;
 }

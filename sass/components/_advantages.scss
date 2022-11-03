@@ -1,6 +1,11 @@
-@media screen and (max-width: $mobile) {
-  .advantages__item {
-    width: 450px;
+.advantages {
+  width: $mobile;
+}
+.advantages__item {
+  width: 450px;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
