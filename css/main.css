@@ -103,6 +103,7 @@ address {
 }
 
 .header {
+  position: relative;
   border-bottom: 1px solid #eeeeee;
 }
 
@@ -122,6 +123,21 @@ address {
 .header__nav-list,
 .header__contact-list {
   display: none;
+}
+
+.header__menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: tomato;
+}
+.header__menu.is-open {
+  display: block;
 }
 
 .hero {
@@ -187,11 +203,11 @@ address {
 .menu-btn .menu-btn__icon-cross {
   display: none;
 }
-
-.menu-btn__icon-cross,
-.menu-btn__icon-cross {
-  width: 24px;
-  height: 16px;
+.menu-btn.is-open .menu-btn__icon-cross {
+  display: block;
+}
+.menu-btn.is-open .menu-btn__icon-menu {
+  display: none;
 }
 
 .signup-form__submit-btn {

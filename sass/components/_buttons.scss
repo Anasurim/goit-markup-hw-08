@@ -39,11 +39,14 @@
   & .menu-btn__icon-cross {
     display: none;
   }
-}
-.menu-btn__icon-cross,
-.menu-btn__icon-cross {
-  width: 24px;
-  height: 16px;
+
+  &.is-open .menu-btn__icon-cross {
+    display: block;
+  }
+
+  &.is-open .menu-btn__icon-menu {
+    display: none;
+  }
 }
 
 .signup-form__submit-btn {

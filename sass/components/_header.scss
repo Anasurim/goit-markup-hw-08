@@ -1,4 +1,5 @@
 .header {
+  position: relative;
   border-bottom: $border-param;
 }
 
@@ -12,4 +13,20 @@
 .header__nav-list,
 .header__contact-list {
   display: none;
+}
+
+.header__menu {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 40px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: tomato;
+
+  &.is-open {
+    display: block;
+  }
 }
