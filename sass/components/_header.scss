@@ -2,14 +2,14 @@
   border-bottom: $border-param;
 }
 
-@media screen and (max-width: $mobile) {
-  .header {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
+.header__nav {
+  display: flex;
+  min-height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .header__nav-list,
-  .header__contact-list {
-    display: none;
-  }
+.header__nav-list,
+.header__contact-list {
+  display: none;
 }
