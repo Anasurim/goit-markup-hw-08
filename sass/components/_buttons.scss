@@ -35,18 +35,6 @@
   border: none;
   cursor: pointer;
   background-color: transparent;
-
-  & .menu-btn__icon-cross {
-    display: none;
-  }
-
-  &.is-open .menu-btn__icon-cross {
-    display: block;
-  }
-
-  &.is-open .menu-btn__icon-menu {
-    display: none;
-  }
 }
 
 .signup-form__submit-btn {

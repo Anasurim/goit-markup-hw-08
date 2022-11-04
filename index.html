@@ -64,15 +64,12 @@
 
           <button
             type="button"
-            class="menu-btn is-open"
+            class="menu-btn is-open js-open-menu"
             aria-label="menu switcher"
             aria-expanded="false"
+            aria-controls="header__menu"
           >
             <svg class="menu-btn__icon" width="40" height="40">
-              <use
-                href="./img/icons.svg#icon-cross"
-                class="menu-btn__icon-cross"
-              ></use>
               <use
                 href="./img/icons.svg#icon-menu"
                 class="menu-btn__icon-menu"
@@ -80,11 +77,50 @@
             </svg>
           </button>
 
-          <div class="header__menu is-open .js-menu-container">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto sit
-            esse sapiente hic doloremque placeat ipsa. Laudantium laboriosam
-            sunt, quo consequatur ab, accusamus officia assumenda in mollitia
-            similique ipsa magnam.
+          <div class="header__menu is-open js-menu-container" id="header__menu">
+            <button
+              type="button"
+              class="menu-btn menu-btn--close is-open js-close-menu"
+              aria-label="menu switcher"
+              aria-expanded="false"
+            >
+              <svg class="menu-btn__icon" width="40" height="40">
+                <use
+                  href="./img/icons.svg#icon-cross"
+                  class="menu-btn__icon-cross"
+                ></use>
+              </svg>
+            </button>
+            <ul class="header__nav-list--mobile">
+              <li class="header__item">
+                <a href="./index.html" class="header__link"> Студія </a>
+              </li>
+              <li class="header__item">
+                <a href="./portfolio.html" class="header__link">Портфоліо</a>
+              </li>
+              <li class="header__item">
+                <a href="./portfolio.html" class="header__link">Контакти</a>
+              </li>
+            </ul>
+            <!-- Contacts -->
+            <ul class="header__contact-list--mobile">
+              <li class="header__item">
+                <a href="mailto:info@devstudio.com" class="header__mail">
+                  <svg class="header__icon" width="16" height="12">
+                    <use href="./img/icons.svg#icon-envelope" />
+                  </svg>
+                  info@devstudio.com
+                </a>
+              </li>
+              <li class="header__item">
+                <a href="tel:+380961111111" class="header__phone">
+                  <svg class="header__icon" width="10" height="16">
+                    <use href="./img/icons.svg#icon-smartphone" />
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+            </ul>
           </div>
         </nav>
       </div>

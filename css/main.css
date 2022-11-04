@@ -200,15 +200,6 @@ address {
   cursor: pointer;
   background-color: transparent;
 }
-.menu-btn .menu-btn__icon-cross {
-  display: none;
-}
-.menu-btn.is-open .menu-btn__icon-cross {
-  display: block;
-}
-.menu-btn.is-open .menu-btn__icon-menu {
-  display: none;
-}
 
 .signup-form__submit-btn {
   display: -webkit-box;
