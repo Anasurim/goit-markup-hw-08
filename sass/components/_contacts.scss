@@ -1,3 +1,24 @@
+.header__mail--mobile {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.02em;
+  color: $primary-text-color;
+  text-decoration: none;
+}
+.header__phone--mobile {
+  display: block;
+  margin-bottom: 32px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: $accent-color;
+}
+
 .header__mail,
 .header__phone {
   display: inline-flex;
@@ -20,7 +41,7 @@
   &:hover {
     color: $accent-color;
   }
-  @media screen and (max-width: $mobile) {
+  @media screen and (max-width: $tablett) {
     display: none;
   }
 }

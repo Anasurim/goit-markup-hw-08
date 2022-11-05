@@ -24,22 +24,19 @@
     <!-- Header -->
     <header class="header">
       <div class="container">
-        <nav class="header__nav header__nav--flex container">
+        <nav class="header__nav">
           <!-- Logo -->
           <a href="./index.html" class="logo">
             <span class="logo--text-color">Web</span>Studio
           </a>
           <ul class="header__nav-list">
             <li class="header__item">
-              <a href="./index.html" class="header__link"> Студія </a>
+              <a href="./index.html" class="header__link header__link--current">
+                Студія
+              </a>
             </li>
             <li class="header__item">
-              <a
-                href="./portfolio.html"
-                class="header__link header__link--current"
-              >
-                Портфоліо
-              </a>
+              <a href="./portfolio.html" class="header__link">Портфоліо</a>
             </li>
             <li class="header__item">
               <a href="./portfolio.html" class="header__link">Контакти</a>
@@ -64,6 +61,88 @@
               </a>
             </li>
           </ul>
+
+          <button
+            type="button"
+            class="menu-btn is-open js-open-menu"
+            aria-label="menu switcher"
+            aria-expanded="false"
+            aria-controls="header__menu"
+          >
+            <svg class="menu-btn__icon" width="40" height="40">
+              <use
+                href="./img/icons.svg#icon-menu"
+                class="menu-btn__icon-menu"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="header__menu js-menu-container" id="header__menu">
+            <button
+              type="button"
+              class="menu-btn menu-btn--close js-close-menu"
+              aria-label="menu switcher"
+              aria-expanded="false"
+            >
+              <svg class="menu-btn__icon" width="40" height="40">
+                <use
+                  href="./img/icons.svg#icon-cross"
+                  class="menu-btn__icon-cross"
+                ></use>
+              </svg>
+            </button>
+
+            <ul class="header__nav-list--mobile">
+              <li class="header__item--mobile">
+                <a href="./index.html" class="header__link--mobile"> Студія </a>
+              </li>
+              <li class="header__item--mobile">
+                <a
+                  href="./portfolio.html"
+                  class="header__link--mobile header__link--current"
+                >
+                  Портфоліо
+                </a>
+              </li>
+              <li class="header__item--mobile">
+                <a href="./portfolio.html" class="header__link--mobile">
+                  Контакти
+                </a>
+              </li>
+            </ul>
+            <!-- Contacts -->
+
+            <ul class="header__contact-list--mobile">
+              <li class="header__item--mobile">
+                <a href="tel:+380961111111" class="header__phone--mobile">
+                  +38 096 111 11 11
+                </a>
+              </li>
+              <li class="header__item--mobile">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="header__mail--mobile"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+
+            <ul class="header__social-list">
+              <li class="header__social-item">
+                <a href="#" class="header__social-link">Instagram</a>
+              </li>
+              <li class="header__social-item">
+                <a href="#" class="header__social-link">Twitter</a>
+              </li>
+              <li class="header__social-item">
+                <a href="#" class="header__social-link">Facebook</a>
+              </li>
+              <li class="header__social-item">
+                <a href="#" class="header__social-link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -424,5 +503,7 @@
         </form>
       </div>
     </footer>
+
+    <script src="./js/nav-menu.js"></script>
   </body>
 </html>
