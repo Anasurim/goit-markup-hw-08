@@ -1,13 +1,12 @@
+.portfolio {
+  min-width: $min-width;
+}
 .portfolio__list {
   background-color: $nav-background-color;
   margin-bottom: 30px;
 }
 .portfolio__item:not(:last-child) {
   margin-bottom: 30px;
-}
-
-.portfolio__img {
-  min-width: 450px;
 }
 
 .portfolio__link {
@@ -56,13 +55,13 @@
 }
 
 .portfolio__descr {
-  border-bottom: $border-param;
-  border-left: $border-param;
-  border-right: $border-param;
-
+  min-width: $min-width;
   padding: 20px 24px;
   margin-top: 0;
   margin-bottom: 0;
+  border-bottom: $border-param;
+  border-left: $border-param;
+  border-right: $border-param;
 }
 
 .portfolio__title {

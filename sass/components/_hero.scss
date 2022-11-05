@@ -1,5 +1,5 @@
 .hero {
-  width: 480px;
+  min-width: $min-width;
   padding: 118px 60px;
 
   background-color: $bgc-hero;
