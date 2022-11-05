@@ -1,5 +1,10 @@
+.filter {
+  max-width: 396px;
+}
+
 .filter__list {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  margin-bottom: 40px;
 }
