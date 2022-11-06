@@ -412,10 +412,8 @@ address {
   letter-spacing: 0.03em;
 }
 
-@media screen and (max-width: 480px) {
-  .occupation {
-    display: none;
-  }
+.occupation {
+  display: none;
 }
 
 .team {
@@ -532,13 +530,11 @@ address {
 }
 
 .customers__link {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 15px 50px;
+  display: block;
+  padding: 15px 51px;
+  color: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  color: #afb1b8;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
