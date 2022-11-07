@@ -5,6 +5,12 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  @media screen {
+    .container {
+      max-width: $mobile;
+    }
+  }
 }
 
 .section--padding {
