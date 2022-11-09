@@ -29,7 +29,8 @@
 .portfolio__img {
   min-width: 320px;
   @media screen and (max-width: $mobile) {
-    width: 450px;
+    max-width: 450px;
+    width: 100%;
   }
 }
 
