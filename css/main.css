@@ -118,7 +118,7 @@ address {
 }
 
 .header__menu {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -127,6 +127,7 @@ address {
   padding-top: 48px;
   padding-bottom: 48px;
   z-index: 999;
+  overflow-y: scroll;
   background-color: #ffffff;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
