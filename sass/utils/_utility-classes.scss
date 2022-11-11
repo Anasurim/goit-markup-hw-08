@@ -6,20 +6,26 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen {
-    .container {
-      max-width: $mobile;
-    }
+  @media screen and (min-width: $mobile) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $tablett) {
+    width: $tablett;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
   }
 }
 
 .section--padding {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-  @media screen and (max-width: $mobile) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  @media screen and (min-width: $mobile) {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
