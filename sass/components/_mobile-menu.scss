@@ -2,11 +2,10 @@
   position: absolute;
   top: 0;
   left: 0;
-
   width: 100%;
   height: auto;
   padding: 48px 40px;
-  z-index: 999;
+  z-index: 10;
   overflow-y: scroll;
 
   background-color: $nav-background-color;
@@ -43,29 +42,30 @@
   }
 }
 
-.header__social-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
 .header__contact-list--mobile {
   margin-bottom: 64px;
 }
 
-.header__social-item:not(:last-child) {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
+.header__social-list {
+  display: flex;
 }
+
+.header__social-item {
+  padding-right: 10px;
+  margin-left: 10px;
+
+  &:not(:last-child) {
+    border-right: $modal-form-input-border;
+  }
+}
+
 .header__social-link {
-  display: block;
   font-family: inherit;
-  font-style: normal;
   font-weight: 500;
   font-size: 18px;
+
   line-height: calc(22 / 18);
   letter-spacing: 0.02em;
   color: $accent-color;
   text-decoration: none;
-
-  padding-right: 10px;
 }

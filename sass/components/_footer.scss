@@ -5,11 +5,25 @@
   padding-bottom: 60px;
 }
 
-.container__footer--flex {
+.footer--flex {
   display: block;
+}
 
-  @media screen and (min-width: $tablett) {
+@media screen and (min-width: $tablett) and (max-width: 1199px) {
+  .footer--tablet-flex {
     display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .footer--flex,
+  .footer--tablet-flex {
+    display: flex;
+    align-items: baseline;
   }
 }
 
@@ -17,6 +31,11 @@
   text-align: center;
   margin-top: 0;
   margin-bottom: 60px;
+
+  @media screen and (min-width: $desktop) {
+    margin: 0;
+    text-align: left;
+  }
 
   font-family: inherit;
   font-size: 14px;
@@ -57,7 +76,11 @@
   margin-bottom: 60px;
 
   @media screen and (min-width: $tablett) {
-    margin-left: 165px;
+    margin: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 70px;
   }
 }
 
@@ -73,9 +96,32 @@
   margin-bottom: 20px;
 }
 
+@media screen and (min-width: $tablett) and (max-width: 1199px) {
+  .footer--tablet-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-left: 76px;
+    padding-right: 89px;
+  }
+}
+
 .signup-form {
+  max-width: 450px;
   width: 100%;
-  margin: 0;
+  margin: 0 auto;
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 93px;
+    min-width: 570px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .signup-form__field {
+    display: flex;
+    gap: 12px;
+  }
 }
 
 .signup-form__title {
@@ -88,17 +134,27 @@
   text-transform: uppercase;
 
   color: $nav-background-color;
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
+  }
 }
 
 .signup-form__label {
   display: block;
   margin-bottom: 20px;
+
+  @media screen and (min-width: $desktop) {
+    max-width: 358px;
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .signup-form__input {
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   padding-left: 16px;
 
   font-size: 16px;
