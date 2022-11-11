@@ -48,13 +48,13 @@
 
 .header__social-list {
   display: flex;
+  max-width: 357px;
+  gap: 10px;
 }
 
 .header__social-item {
-  padding-right: 10px;
-  margin-left: 10px;
-
   &:not(:last-child) {
+    padding-right: 10px;
     border-right: $modal-form-input-border;
   }
 }
