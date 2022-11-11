@@ -40,6 +40,10 @@
   &:hover {
     fill: $accent-color-hover;
   }
+
+  @media screen and (min-width: $tablett) {
+    display: none;
+  }
 }
 
 .menu-btn--close {

@@ -26,6 +26,10 @@
   padding-top: 32px;
   padding-bottom: 32px;
 
+  @media screen and (min-width: $tablett) and (max-width: $desktop) {
+    padding: 0;
+  }
+
   font-weight: 500;
   text-decoration: none;
   font-size: 14px;
@@ -40,9 +44,6 @@
   &:focus,
   &:hover {
     color: $accent-color;
-  }
-  @media screen and (max-width: $tablett) {
-    display: none;
   }
 }
 
