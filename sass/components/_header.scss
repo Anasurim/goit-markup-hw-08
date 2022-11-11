@@ -10,7 +10,7 @@
   align-items: center;
 
   @media screen and (min-width: $tablett) {
-    min-height: 80px;
+    max-height: 80px;
     justify-content: flex-start;
   }
 }
@@ -23,6 +23,10 @@
     margin-left: 87px;
   }
 
+  @media screen and (min-width: $desktop) {
+    margin-left: 92px;
+  }
+
   & .header__item:not(:last-child) {
     margin-right: 50px;
   }
@@ -31,13 +35,22 @@
 .header__contact-list {
   display: none;
 
-  @media screen and (min-width: $tablett) and (max-width: $desktop) {
+  @media screen and (min-width: $tablett) and (max-width: 1199px) {
     display: block;
     margin-left: auto;
+
+    & .header__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 
-  & .header__item:not(:last-child) {
-    margin-bottom: 10px;
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-left: auto;
+
+    & .header__item:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
