@@ -1,11 +1,29 @@
-.advantages {
-  min-width: $min-width;
-}
 .advantages__item {
-  min-width: $min-width;
-
   &:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: $tablett) {
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .advantages__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .advantages__list {
+    display: flex;
+    gap: 30px;
+  }
+
+  .advantages__item {
+    flex-basis: calc((100% - 90px) / 4);
   }
 }
 
@@ -14,7 +32,6 @@
   justify-content: center;
   align-items: center;
   height: 120px;
-  min-width: $min-width;
   margin-bottom: 30px;
 
   background-color: $secondary-bg-color;

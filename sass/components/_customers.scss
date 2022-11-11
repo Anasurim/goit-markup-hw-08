@@ -15,12 +15,26 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: center;
+
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+  }
+}
+
+.customers__item {
+  flex-basis: calc((100% - 30px) / 2);
+
+  @media screen and (min-width: $tablett) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .customers__link {
-  display: block;
-  padding: 15px 51px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
   color: $customer-link-color;
   border: 1px solid $customer-link-color;

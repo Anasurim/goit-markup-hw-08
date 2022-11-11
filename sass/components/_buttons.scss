@@ -105,18 +105,14 @@
 
 .close-btn {
   display: flex;
-  align-items: center;
-  justify-content: center;
-
   position: absolute;
   top: 8px;
   right: 8px;
-  width: 30px;
-  height: 30px;
   margin: 0;
+  padding: 8px;
   cursor: pointer;
   border-radius: 50%;
-  background-color: $nav-background-color;
+  background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: $logo-color;
 
