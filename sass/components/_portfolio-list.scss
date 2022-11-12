@@ -1,14 +1,31 @@
 .portfolio__list {
   background-color: $nav-background-color;
-  margin-bottom: 30px;
-}
-.portfolio__item:not(:last-child) {
-  margin-bottom: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  .portfolio__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: $tablett) {
+  .portfolio__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .portfolio__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .portfolio__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
 .portfolio__link {
   display: block;
-
   text-decoration: none;
 
   transition: box-shadow 250ms $hover-time-func,
@@ -28,10 +45,11 @@
 
 .portfolio__img {
   min-width: 320px;
-  @media screen and (max-width: $mobile) {
-    max-width: 450px;
-    width: 100%;
-  }
+  width: 100%;
+  //   @media screen and (max-width: $mobile) {
+  //     max-width: 450px;
+  //     width: 100%;
+  //   }
 }
 
 .portfolio__overlay {

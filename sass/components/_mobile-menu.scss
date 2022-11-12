@@ -48,7 +48,7 @@
 
 .header__social-list {
   display: flex;
-  max-width: 357px;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
