@@ -212,17 +212,16 @@ address {
 }
 
 .header__menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 100vh;
   padding: 48px 40px;
-  z-index: 10;
   overflow-y: scroll;
   background-color: #ffffff;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -230,8 +229,8 @@ address {
 }
 .header__menu.is-open {
   display: block;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 .header__nav-list--mobile {
@@ -285,6 +284,8 @@ address {
 
 .hero {
   height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #c4c4c4;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../img/studio-img/hero-mobile-img.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/studio-img/hero-mobile-img.jpg");
@@ -295,6 +296,8 @@ address {
 @media screen and (min-width: 1200px) {
   .hero {
     height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -331,7 +334,6 @@ address {
 .hero__title {
   max-width: 360px;
   width: 100%;
-  padding-top: 98px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
@@ -345,7 +347,6 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
-    padding-top: 200px;
     max-width: 696px;
     width: 100%;
     font-weight: 900;
@@ -356,7 +357,8 @@ address {
 
 .hero__btn, .hero__btn--center {
   display: block;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
   padding: 10px 32px;
   font-family: inherit;
   font-style: normal;
@@ -518,6 +520,9 @@ address {
         flex-wrap: wrap;
     gap: 30px;
   }
+  .advantages__list .advantages__item {
+    margin: 0;
+  }
   .advantages__item {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
@@ -560,6 +565,11 @@ address {
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .advantages__title {
+    text-align: center;
+  }
+}
 
 .advantages__description {
   font-size: 14px;
@@ -590,13 +600,20 @@ address {
 }
 
 .occupation__title {
+  margin-bottom: 30px;
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
+  font-size: 28px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .occupation__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.1666666667;
+  }
 }
 
 .occupation__thumb {
@@ -675,12 +692,19 @@ address {
 }
 
 .team__title {
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
+  font-size: 28px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    line-height: 1.1666666667;
+    margin-bottom: 50px;
+  }
 }
 
 .team__name {
@@ -729,6 +753,10 @@ address {
   fill: currentColor;
 }
 
+.social-links--no-padding {
+  padding: 0;
+}
+
 .social-links__link--background-color {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
@@ -743,12 +771,19 @@ address {
 }
 
 .customers__title {
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.2;
+  font-size: 28px;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+}
+@media screen and (min-width: 1200px) {
+  .customers__title {
+    font-size: 36px;
+    line-height: 1.1666666667;
+    margin-bottom: 50px;
+  }
 }
 
 .customers__list {
@@ -828,6 +863,7 @@ address {
             align-items: baseline;
     padding-left: 76px;
     padding-right: 89px;
+    margin-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -851,7 +887,7 @@ address {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 767px) {
   .adress {
     margin: 0;
     text-align: left;
@@ -879,10 +915,7 @@ address {
 }
 
 .follow {
-  max-width: 206px;
   text-align: center;
-  margin-right: auto;
-  margin-left: auto;
   margin-bottom: 60px;
 }
 @media screen and (min-width: 767px) {
@@ -893,6 +926,7 @@ address {
 @media screen and (min-width: 1200px) {
   .follow {
     margin-left: 70px;
+    text-align: left;
   }
 }
 

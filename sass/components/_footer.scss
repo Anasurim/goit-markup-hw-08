@@ -16,6 +16,7 @@
     align-items: baseline;
     padding-left: 76px;
     padding-right: 89px;
+    margin-bottom: 60px;
   }
 }
 
@@ -32,7 +33,7 @@
   margin-top: 0;
   margin-bottom: 60px;
 
-  @media screen and (min-width: $desktop) {
+  @media screen and (min-width: $tablett) {
     margin: 0;
     text-align: left;
   }
@@ -68,11 +69,7 @@
 }
 
 .follow {
-  max-width: 206px;
-
   text-align: center;
-  margin-right: auto;
-  margin-left: auto;
   margin-bottom: 60px;
 
   @media screen and (min-width: $tablett) {
@@ -81,6 +78,7 @@
 
   @media screen and (min-width: $desktop) {
     margin-left: 70px;
+    text-align: left;
   }
 }
 

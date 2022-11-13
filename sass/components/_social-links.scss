@@ -25,7 +25,9 @@
 }
 
 //======== footer social links
-
+.social-links--no-padding {
+  padding: 0;
+}
 .social-links__link--background-color {
   @extend .social-links__link;
   background-color: $footer-bgc-soc;

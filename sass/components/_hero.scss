@@ -1,8 +1,12 @@
 .hero {
   height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   @media screen and (min-width: $desktop) {
     height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 
   background-color: $bgc-hero;
@@ -82,7 +86,6 @@
   max-width: 360px;
 
   width: 100%;
-  padding-top: 98px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 30px;
@@ -95,7 +98,6 @@
   color: $nav-background-color;
 
   @media screen and (min-width: $desktop) {
-    padding-top: 200px;
     max-width: 696px;
     width: 100%;
     font-weight: 900;
