@@ -1,7 +1,10 @@
 .hero {
+  max-width: 1600px;
   height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
+  margin-right: auto;
+  margin-left: auto;
 
   @media screen and (min-width: $desktop) {
     height: 600px;
