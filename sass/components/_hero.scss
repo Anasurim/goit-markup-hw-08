@@ -37,7 +37,7 @@
   }
 }
 
-@media screen and (min-width: $mobile) and (max-width: $tablett) {
+@media screen and (min-width: $tablett) {
   .hero {
     background-image: linear-gradient(
         to right,
@@ -61,7 +61,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: $desktop) {
   .hero {
     background-image: linear-gradient(
         to right,
