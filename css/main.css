@@ -228,30 +228,19 @@ address {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__menu.is-open {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
 
-@media screen and (min-height: 420px) and (max-height: 599px) {
-  .header__nav-list--mobile {
-    margin-bottom: 32px;
-  }
-}
-@media screen and (min-height: 600px) and (max-height: 679px) {
-  .header__nav-list--mobile {
-    margin-bottom: 150px;
-  }
-}
-@media screen and (min-height: 680px) and (max-height: 720px) {
-  .header__nav-list--mobile {
-    margin-bottom: 256px;
-  }
-}
-@media screen and (min-height: 721px) {
-  .header__nav-list--mobile {
-    margin-bottom: 302px;
-  }
+.header__contact-list--mobile {
+  margin-top: auto;
 }
 
 .header__item--mobile:not(:last-child) {
@@ -272,12 +261,7 @@ address {
 }
 
 .header__contact-list--mobile {
-  margin-bottom: 32px;
-}
-@media screen and (min-height: 720px) {
-  .header__contact-list--mobile {
-    margin-bottom: 64px;
-  }
+  margin-bottom: 64px;
 }
 
 .header__social-list {
@@ -880,17 +864,29 @@ address {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    padding-left: 76px;
-    padding-right: 89px;
     margin-bottom: 60px;
   }
 }
+.footer--logo-flex {
+  text-align: center;
+}
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .footer--logo-flex {
+    margin-right: 165px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer--logo-flex {
+    text-align: left;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer--flex,
 .footer--tablet-flex {
@@ -912,7 +908,7 @@ address {
   letter-spacing: 0.03em;
   color: #ffffff;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1200px) {
   .adress {
     margin: 0;
     text-align: left;
@@ -965,21 +961,6 @@ address {
   margin-bottom: 20px;
 }
 
-@media screen and (min-width: 767px) and (max-width: 1199px) {
-  .footer--tablet-flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
-    padding-left: 76px;
-    padding-right: 89px;
-  }
-}
 .signup-form {
   max-width: 450px;
   width: 100%;

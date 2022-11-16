@@ -12,11 +12,20 @@
 @media screen and (min-width: $tablett) and (max-width: 1199px) {
   .footer--tablet-flex {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: baseline;
-    padding-left: 76px;
-    padding-right: 89px;
     margin-bottom: 60px;
+  }
+}
+.footer--logo-flex {
+  text-align: center;
+
+  @media screen and (min-width: $tablett) and (max-width: 1199px) {
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    text-align: left;
   }
 }
 
@@ -33,7 +42,7 @@
   margin-top: 0;
   margin-bottom: 60px;
 
-  @media screen and (min-width: $tablett) {
+  @media screen and (min-width: $desktop) {
     margin: 0;
     text-align: left;
   }
@@ -92,16 +101,6 @@
   color: $nav-background-color;
 
   margin-bottom: 20px;
-}
-
-@media screen and (min-width: $tablett) and (max-width: 1199px) {
-  .footer--tablet-flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding-left: 76px;
-    padding-right: 89px;
-  }
 }
 
 .signup-form {
