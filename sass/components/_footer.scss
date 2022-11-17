@@ -19,13 +19,16 @@
 }
 .footer--logo-flex {
   text-align: center;
+  margin-bottom: 60px;
 
   @media screen and (min-width: $tablett) and (max-width: 1199px) {
     margin-right: 165px;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: $desktop) {
     text-align: left;
+    margin-bottom: 0;
   }
 }
 
@@ -40,7 +43,6 @@
 .adress {
   text-align: center;
   margin-top: 0;
-  margin-bottom: 60px;
 
   @media screen and (min-width: $desktop) {
     margin: 0;
